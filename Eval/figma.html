@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background:linear-gradient(#17063d,#1c0648)
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            /* border: solid black; */
+            width: 60%;
+            padding: 10px;
+            background-color: #231246;
+            border-radius: 40px;
+            margin: auto;
+            margin-top: 40px;
+            /* position: fixed; */
+            /* z-index: 1000; */
+            /* left: 20%; */
+        }
+        .mid{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .text{
+            background-image: url("BGPattern.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 650px;
+        }
+        .mid_logo{
+            margin: auto;
+            padding-inline: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 38%;
+            background-color: #131428;
+            border-radius: 30px;
+        }
+        .logo{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            width: 60%;
+            margin: auto;
+            margin-top: 100px;
+        }
+        .list{
+            background-color: #221543;
+            margin-top: 100px;
+            width: 40%;
+            margin: auto;
+            padding: 40px;
+            border-radius: 60px;
+        }
+        .box{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 60%;
+            margin: auto;
+            margin-top: 30px;
+            gap: 20px;
+        }
+        .box>div{
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            border-radius: 20px;
+        }
+        .card{
+            width:50%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin-top: 40px;
+        }
+        .card img{
+            width: 80%;
+        }
+        .newy{
+            margin: auto;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            width: 50%;
+        }
+        .newy p,h3{
+            color: white;
+        }
+        .newy div{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            border-radius: 20px;
+        }
+        .bag{
+            background-image: url("floor.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 650px;
+        }
+        @media  screen and (min-width:501px) and (max-width:800px){
+            .box{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 60%;
+            margin: auto;
+            margin-top: 30px;
+            gap: 20px;
+        }
+        .card{
+            width:50%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-top: 40px;
+        }
+        .card img{
+            width: 80%;
+        }
+        .newy{
+            margin: auto;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            width: 50%;
+        }
+        .newy p,h3{
+            color: white;
+        }
+        .newy div{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            border-radius: 20px;
+        }
+        }
+        @media  screen and (max-width:501px){
+            .box{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            width: 60%;
+            margin: auto;
+            margin-top: 30px;
+            gap: 20px;
+        }
+        .card{
+            width:50%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin-top: 40px;
+        }
+        .card img{
+            width: 80%;
+        }
+        .newy{
+            margin: auto;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+            width: 50%;
+        }
+        .newy p,h3{
+            color: white;
+        }
+        .newy div{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            border-radius: 20px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="LeftPart.png" alt="">
+            </div>
+            <div class="mid">
+                <a href="#">Home</a>
+                <a href="#">Documentation</a>
+                <a href="#">Blogs</a>
+                <a href="#">LYNC Portal</a>
+                <a href="#">Request a demo</a>
+            </div>
+            <div style="background-color: white;border-radius: 40px;display: flex;justify-content: center;align-items: center;padding-left: 5px; padding-right: 5px;">
+                Get started →
+            </div>
+        </nav>
+    </header>
+    <div class="text" style="margin-top: 50px; display: flex;flex-direction: column;align-items: center;justify-content: center;">
+        <h1 style="text-align: center;font-size: 80px;color: white;">
+            Launch Your Game <br>
+            on <span style="color: #231246;">Web 3.0</span> in Minutes
+        </h1>
+        <p style="text-align: center;color: gray;font-size: 20px;">
+            We help game developers to launch their game on Web 3.0, by keeping <br>
+            blockchain complexities aside with WebWorld SDKs!
+        </p>
+        <div class="buttons">
+            <div style="color: white;background-color: #3f42d8;border-radius: 40px;display: flex;justify-content: center;align-items: center;padding-left: 5px; padding-right: 5px;">
+                Get started →
+            </div>
+            <div style="color: white;background-color: #030617;border-radius: 40px;display: flex;justify-content: center;align-items: center;padding-left: 5px; padding-right: 5px;">
+                View Docs →
+            </div>
+        </div>
+    </div>
+    <h2 style="color: gray;text-align: center;">Backed By</h2>
+    <div class="mid_logo">
+        <div>
+            <img src="image41.png" alt="">
+        </div>
+        <div>
+            <img src="image39.png" alt="">
+        </div>
+        <div>
+            <img src="image40.png" alt="">
+        </div>
+    </div>
+    <div style="border-top: solid #676282;border-bottom: solid #676282;width: 50%;margin: auto;margin-top: 60px;">
+        <p style="
+            text-align: center;font-size: 25px;color: white;font-weight: bold;">LYNC provides a scalable infrastructure for launching web3 <br>
+           games, without hampering the <span style="color: #4247ab;">gaming experience.</span> <br>
+            So that you can deliver the next big hit!</p>
+    </div>
+    <h1 style="margin-top: 100px;text-align: center;color: white;font-weight: bold;font-size: 50px;">Making blockchain gaming <br> accessible to <span style="color: #4247ab;">everyone!</span></h1>
+    <div class="logo">
+        <img src="zu.png" alt="">
+        <img src="bo.png" alt="">
+        <img src="so.png" alt="">
+        <img src="lu.png" alt="">
+        <img src="vr.png" alt="">
+    </div>
+    <h1 style="text-align: center;font-size: 60px;color: white;margin-top: 50px;">
+        Power Up Your Web3 Game <br>
+        Development, With <span style="color: #8b02ad;">LYNC SDKs</span>
+    </h1>
+    <p style="text-align: center;color: gray;font-size: 30px;margin-top: 30px;">
+        LYNC SDKs can be easily integrated into game engines like Unity 3D <br>
+        and Unreal Engine in a few clicks.
+    </p>
+    <div class="list" style="margin-top: 40px;">
+    <h2 style="color: white;">Don't Worry about the <span style="color:#8b02ad;">Web3</span> Complexities</h2>
+    <p style="color: white;">✧ Save 9-12 months of development time</p>
+    <p style="color: white;">✧ Focus completely on Game Dev and Mechanics </p>
+    <p style="color: white;">✧ Save Up to $500K+ on Salaries & Smart Contract Auditing</p>
+    <p style="color: white;">✧ Go Cross-Chain in a few clicks</p>
+</div>
+<img src="Group.png" alt="" style="display: block;margin-left:800px;margin-top: -350px;">
+
+<div style="display: flex;justify-content: center;align-items: center;margin-top: -400px;">
+    <img src="game.png" alt="" style="display: block;margin: auto;">
+</div>
+<div>
+    <h1 style="text-align: center;">Product <span style="color: #8b02ad;">Suit</span></h1>
+    <div class="box">
+        <div>
+            <img style="display: block;margin: auto;" src="Rectangle.png" alt="">
+            <h2 style="color: white;text-align: center;">LYNC Wallet SDK</h2>
+            <p style="color: gray;text-align: center;">Empowering developers to integrate <br>
+                account abstraction in their game, <br>
+                dapp, metaverse and more in <br>
+                minutes.</p>
+        </div>
+        <div>
+            <img style="display: block;margin: auto;" src="Rectangle.png" alt="">
+            <h2 style="color: white;text-align: center;">LYNC Wallet SDK</h2>
+            <p style="color: gray;text-align: center;">Empowering developers to integrate <br>
+                account abstraction in their game, <br>
+                dapp, metaverse and more in <br>
+                minutes.</p>
+        </div>
+        <div>
+            <img style="display: block;margin: auto;" src="Rectangle.png" alt="">
+            <h2 style="color: white;text-align: center;">LYNC Wallet SDK</h2>
+            <p style="color: gray;text-align: center;">Empowering developers to integrate <br>
+                account abstraction in their game, <br>
+                dapp, metaverse and more in <br>
+                minutes.</p>
+        </div>
+        <div>
+            <img style="display: block;margin: auto;" src="Rectangle.png" alt="">
+            <h2 style="color: white;text-align: center;">LYNC Wallet SDK</h2>
+            <p style="color: gray;text-align: center;">Empowering developers to integrate <br>
+                account abstraction in their game, <br>
+                dapp, metaverse and more in <br>
+                minutes.</p>
+        </div>
+        <div>
+            <img style="display: block;margin: auto;" src="Rectangle.png" alt="">
+            <h2 style="color: white;text-align: center;">LYNC Wallet SDK</h2>
+            <p style="color: gray;text-align: center;">Empowering developers to integrate <br>
+                account abstraction in their game, <br>
+                dapp, metaverse and more in <br>
+                minutes.</p>
+        </div>
+        <div>
+            <img style="display: block;margin: auto;" src="Rectangle.png" alt="">
+            <h2 style="color: white;text-align: center;">LYNC Wallet SDK</h2>
+            <p style="color: gray;text-align: center;">Empowering developers to integrate <br>
+                account abstraction in their game, <br>
+                dapp, metaverse and more in <br>
+                minutes.</p>
+        </div>
+    </div>
+</div>
+<div style="margin: auto;"><h2 style="text-align: center;">With LYNC, build on your <br> <span style="color: #4247ab;">favorite chain.</span></h2></div>
+<img src="new.png" alt="" style="margin-top: 30px;margin: auto;width: 60%;display: block;">
+<h2 style="margin-top: 100px;text-align: center;color: white;">From our Blog</h2>
+<p style="margin-top: 20px;text-align: center;color: gray;">Level Up Your Web3 Gaming Experience: <br> Explore Our br
+    Blog for Insights, Tips,<br> and Innovations in Gaming SDKs!</p>
+<div class="card">
+    <img src="jof.png" alt="">
+    <img src="jof.png" alt="">
+    <img src="jof.png" alt="">
+</div>
+<h1 style="color: white;text-align: center;margin-top: 100px;">Valuable color</h1>
+<div class="newy">
+<div>
+    <p style="border-bottom: 1px solid gray;">Absolutely blown away by the <br> capabilities of this company's <br> Web3 gaming SDK! Integrating <br>it into my project was seamless,<br> and the innovative tools <br>provided took my game <br> to the next level. The supportbr
+         team was incredibly responsive <br> and helpful throughout <br> the process. Highly recommended!</p>
+    <h3>ALEX GEORGE</h3>
+</div>
+<div>
+    <p style="border-bottom: 1px solid gray;">Absolutely blown away by the <br> capabilities of this company's <br> Web3 gaming SDK! Integrating <br>it into my project was seamless,<br> and the innovative tools <br>provided took my game <br> to the next level. The supportbr
+         team was incredibly responsive <br> and helpful throughout <br> the process. Highly recommended!</p>
+    <h3>ALEX GEORGE</h3>
+</div>
+<div>
+    <p style="border-bottom: 1px solid gray;">Absolutely blown away by the <br> capabilities of this company's <br> Web3 gaming SDK! Integrating <br>it into my project was seamless,<br> and the innovative tools <br>provided took my game <br> to the next level. The supportbr
+         team was incredibly responsive <br> and helpful throughout <br> the process. Highly recommended!</p>
+    <h3>ALEX GEORGE</h3>
+</div>
+</div>
+<div style="margin: auto;margin-top: 150px;width: 80%;"><img src="join.png" alt=""></div>
+<div style="width: 70%;margin: auto;margin-top: 100px;"><img src="Believers.png" alt=""></div>
+<div class="bag"><img src="CTA.png" alt=""></div>
+</body>
+</html>
+
+
